@@ -1,0 +1,16 @@
+<p>From App Component</p>
+<app-user></app-user>
+<!-- <app-users></app-users> -->
+<!-- <div app-user></div> -->
+ <div class="app-users"></div>
+
+ <button class="btn btn-primary" >Add User </button>
+
+ <!-- <p style="font-size: 2rem;">Testing</p> -->
+  <!-- <p class="big-font-size">Testing</p> -->
+  <!-- به جای 2 خط بالا این دستور زیر را مینویسیم  -->
+<p [style]="isCorrect?'font-size:2rem':'font-size:6rem'"> Testing</p>
+<p [style.font-size]="isCorrect?'6rem':'2rem'"> Testing</p>
+<p [style.font-size.rem]="!isCorrect?'3':'8'"> Testing</p>
+<p [style]="styles"> Testing</p>
+
